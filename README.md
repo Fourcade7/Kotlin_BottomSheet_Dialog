@@ -51,3 +51,32 @@
                               android:layout_height="200dp"></ImageView>
 
                       </LinearLayout>
+
+
+//backgroundshape
+
+
+                      <?xml version="1.0" encoding="utf-8"?>
+                      <shape xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:shape="rectangle"
+                          >
+                          <solid android:color="@android:color/white"></solid>
+
+                          <corners
+                              android:topRightRadius="35dp"
+                              android:topLeftRadius="35dp"></corners>
+                      </shape>
+                      
+                      
+
+
+//res/values/themes.xml
+
+
+                    <style name="bottomsheettheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+                            <item name="bottomSheetStyle">@style/bottomsheeetstyle</item>
+                        </style>
+                        <style name="bottomsheeetstyle" parent="Widget.Design.BottomSheet.Modal">
+                            <item name="android:background">@android:color/transparent</item>
+                        </style>
+
